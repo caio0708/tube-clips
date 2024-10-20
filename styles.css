@@ -251,3 +251,20 @@ footer {
     font-size: 1em; /* Ajustado para telas menores */
     color: rgb(255, 255, 255);
 }
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .how-it-works-grid {
+        grid-template-columns: 1fr; /* Uma coluna em dispositivos menores */
+    }
+
+    .pricing-plans {
+        flex-direction: column; /* Coluna em vez de linha */
+        align-items: stretch; /* Esticar os planos de preço para ocupar toda a largura */
+    }
+
+    .pricing-plan {
+        width: 100%; /* Ajustar para largura total */
+        max-width: none; /* Remover limite de largura */
+    }
+}
