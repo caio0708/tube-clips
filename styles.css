@@ -4,42 +4,44 @@
 /* Estilo do body */
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 2.0;
-    background-color: #8B0000;
-    color: #fff;
+    line-height: 1.8; /* Ajuste para melhor legibilidade em telas pequenas */
+    color: #fff; /* A cor do texto geral */
     margin: 0; /* Remove margens padrão */
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Faz com que o conteúdo ocupe 100% da altura da viewport */
+    overflow-x: hidden; /* Impede o scroll horizontal */
 }
 
 /* Container */
 .container {
-    width: 90%;
+    width: 100%; /* Ajuste para largura responsiva */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px; /* Ajuste de padding */
 }
 
 /* Estilo do header */
 header {
     text-align: center;
+    background-color: #8B0000; /* Cor de fundo para o header */
+    padding: 20px 0; /* Padding para o header */
 }
 
 header h1 {
-    font-size: 3em; /* Tamanho maior para o título */
+    font-size: 2.5em; /* Reduzido para ser mais adequado a telas pequenas */
     margin-bottom: 10px;
 }
 
 header p {
-    font-size: 1.4em; /* Aumento no tamanho da descrição */
-    margin-bottom: 20px;
+    font-size: 1.2em; /* Reduzido para ser mais adequado a telas pequenas */
+    margin-bottom: 15px; /* Ajuste no espaçamento */
 }
 
 .cta-button-header {
     background-color: #fff;
     color: #ff0000;
-    padding: 15px 30px;
+    padding: 10px 20px; /* Ajuste no padding */
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
@@ -53,22 +55,23 @@ header p {
 
 /* Estilo da seção de características */
 .features {
-    padding: 20px 20px;
+    padding: 20px 10px; /* Ajuste para melhor responsividade */
+    background-color: #8B0000; /* Cor de fundo para a seção de características */
 }
 
 .features h2 {
     text-align: center;
-    font-size: 2.5em; /* Tamanho maior para o subtítulo */
-    margin-bottom: 30px;
+    font-size: 2em; /* Ajustado para telas menores */
+    margin-bottom: 20px;
 }
 
 .feature-item {
-    margin: 20px 0;
+    margin: 15px 0; /* Ajuste no margin */
     text-align: center;
 }
 
 .feature-item h3 {
-    font-size: 1.8em; /* Tamanho aumentado para os títulos das características */
+    font-size: 1.5em; /* Ajustado para ser mais apropriado em dispositivos móveis */
     margin-bottom: 10px;
 }
 
@@ -81,23 +84,24 @@ header p {
 
 /* Estilo da seção CTA */
 .cta {
-    padding: 40px 20px;
+    padding: 30px 15px; /* Ajuste para melhor responsividade */
+    background-color: #f4f4f4; /* Cor de fundo para a seção CTA */
 }
 
 .cta h2 {
-    font-size: 2.5em; /* Tamanho maior para o título da seção CTA */
-    margin-bottom: 15px;
+    font-size: 2em; /* Ajustado para telas menores */
+    margin-bottom: 10px;
 }
 
 .cta p {
-    font-size: 1.2em; /* Tamanho ajustado para o parágrafo */
-    margin-bottom: 20px;
+    font-size: 1em; /* Ajuste no tamanho do texto */
+    margin-bottom: 15px; /* Ajuste no espaçamento */
 }
 
 .cta-button {
     background-color: #fff;
-    color: #ff0000;
-    padding: 15px 30px;
+    color: #2d2d2d;
+    padding: 10px 20px; /* Ajuste no padding */
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
@@ -114,13 +118,12 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0; /* Reduzido o padding */
-    font-size: 0.9em; /* Diminuído o tamanho da fonte */
+    padding: 15px 0; /* Ajuste no padding */
+    font-size: 0.8em; /* Diminuído o tamanho da fonte */
     bottom: 0;
     width: 100%;
     z-index: 1000;
 }
-
 
 /* Layout Utilities */
 .container {
@@ -129,13 +132,13 @@ footer {
 
 /* Seção Como Funciona */
 .how-it-works {
-    padding: 40px 20px;
-    background-color: #f4f4f4;
+    padding: 30px 10px; /* Ajuste no padding */
+    background-color: #f4f4f4; /* Cor de fundo para a seção Como Funciona */
     color: #333;
     text-align: center;
     font-family: 'Arial', sans-serif; /* Alterando a fonte para Arial */
-    font-size: 1.3em; /* Aumentando o tamanho do texto */
-    line-height: 1.8; /* Aumentando o espaçamento entre linhas para melhor legibilidade */
+    font-size: 1.1em; /* Aumentando o tamanho do texto */
+    line-height: 1.5; /* Aumentando o espaçamento entre linhas para melhor legibilidade */
 }
 
 .how-it-works-grid {
@@ -147,58 +150,60 @@ footer {
 .how-it-works-item {
     text-align: center;
     background-color: #fff;
-    padding: 20px;
+    padding: 15px; /* Ajuste no padding */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .how-it-works-item img {
     width: 100%; /* Ocupar toda a largura disponível */
-    max-width: 300px; /* Limite de largura */
+    max-width: 100%; /* Limite de largura removido */
     height: auto; /* Manter proporção */
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border-radius: 5px;
 }
 
 .how-it-works h2 {
-    font-size: 2.5em; /* Tamanho maior para o título */
-    margin-bottom: 20px;
+    font-size: 2em; /* Ajustado para telas menores */
+    margin-bottom: 15px;
 }
 
 .how-it-works p, .how-it-works ol li {
-    font-size: 0.8em; /* Tamanho do texto dentro dos parágrafos e da lista */
+    font-size: 0.9em; /* Tamanho do texto dentro dos parágrafos e da lista */
     margin-bottom: 10px;
 }
 
 /* Seção Pacotes */
 .pricing {
-    padding: 15px 5px;
-    background-color: #fff;
+    padding: 10px 5px; /* Ajuste no padding */
+    background-color: #8B0000; /* Cor de fundo para a seção de Pacotes */
     text-align: center;
 }
 
 .pricing-plans {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    align-items: center; /* Centralizando itens */
+    gap: 20px; /* Ajuste no espaço entre os planos */
 }
 
 .pricing-plan {
-    background-color: #8B0000;
+    background-color: #2d2d2d; /* Cor de fundo para os planos de preços */
     color: white;
-    padding: 20px;
+    padding: 15px; /* Ajuste no padding */
     border-radius: 10px;
-    width: 250px;
+    width: 90%; /* Ajuste para largura responsiva */
+    max-width: 300px; /* Limite de largura */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-plan h3 {
-    font-size: 1.8em;
+    font-size: 1.6em; /* Ajustado para telas menores */
     margin-bottom: 10px;
 }
 
 .pricing-plan .price {
-    font-size: 2em;
+    font-size: 1.8em; /* Ajustado para telas menores */
     margin: 10px 0;
 }
 
@@ -210,17 +215,17 @@ footer {
 .pricing-plan ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 10px 0; /* Ajuste no margin */
 }
 
 .pricing-plan ul li {
-    margin: 10px 0;
+    margin: 5px 0; /* Ajuste no margin */
 }
 
 /* Seção de Reviews */
 .reviews {
-    padding: 60px 20px;
-    background-color: #00000085;
+    padding: 40px 10px; /* Ajuste no padding */
+    background-color: #00000085; /* Cor de fundo para a seção de Reviews */
     text-align: center;
 }
 
@@ -232,7 +237,8 @@ footer {
 
 .review-item {
     text-align: center;
-    width: 250px;
+    width: 90%; /* Ajuste para largura responsiva */
+    max-width: 300px; /* Limite de largura */
 }
 
 .review-item img {
@@ -242,6 +248,6 @@ footer {
 }
 
 .review-item p {
-    font-size: 1.1em;
+    font-size: 1em; /* Ajustado para telas menores */
     color: rgb(255, 255, 255);
 }
