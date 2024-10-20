@@ -1,6 +1,11 @@
 /* Importando a fonte Roboto do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Reseta box-sizing */
+* {
+    box-sizing: border-box;
+}
+
 /* Estilo do body */
 body {
     font-family: 'Roboto', sans-serif;
@@ -254,6 +259,10 @@ footer {
 
 /* Media Queries para dispositivos móveis */
 @media (max-width: 768px) {
+    .container {
+        margin: 0 10px; /* Garante margens iguais em dispositivos móveis */
+    }
+
     .how-it-works-grid {
         grid-template-columns: 1fr; /* Uma coluna em dispositivos menores */
     }
