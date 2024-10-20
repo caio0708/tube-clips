@@ -1,0 +1,247 @@
+/* Importando a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilo do body */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.0;
+    background-color: #8B0000;
+    color: #fff;
+    margin: 0; /* Remove margens padrão */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz com que o conteúdo ocupe 100% da altura da viewport */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo do header */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em; /* Tamanho maior para o título */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.4em; /* Aumento no tamanho da descrição */
+    margin-bottom: 20px;
+}
+
+.cta-button-header {
+    background-color: #fff;
+    color: #ff0000;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button-header:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Estilo da seção de características */
+.features {
+    padding: 20px 20px;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5em; /* Tamanho maior para o subtítulo */
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 1.8em; /* Tamanho aumentado para os títulos das características */
+    margin-bottom: 10px;
+}
+
+/* Adicionando imagens nos itens das características */
+.feature-item img {
+    max-width: 100%; /* Ajusta a imagem ao tamanho do item */
+    height: auto; /* Mantém a proporção */
+    margin-bottom: 10px; /* Espaço entre a imagem e o título */
+}
+
+/* Estilo da seção CTA */
+.cta {
+    padding: 40px 20px;
+}
+
+.cta h2 {
+    font-size: 2.5em; /* Tamanho maior para o título da seção CTA */
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 1.2em; /* Tamanho ajustado para o parágrafo */
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #ff0000;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Reduzido o padding */
+    font-size: 0.9em; /* Diminuído o tamanho da fonte */
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/* Layout Utilities */
+.container {
+    width: 100%;
+}
+
+/* Seção Como Funciona */
+.how-it-works {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Alterando a fonte para Arial */
+    font-size: 1.3em; /* Aumentando o tamanho do texto */
+    line-height: 1.8; /* Aumentando o espaçamento entre linhas para melhor legibilidade */
+}
+
+.how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 30px; /* Espaçamento entre os itens */
+}
+
+.how-it-works-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works-item img {
+    width: 100%; /* Ocupar toda a largura disponível */
+    max-width: 300px; /* Limite de largura */
+    height: auto; /* Manter proporção */
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.how-it-works h2 {
+    font-size: 2.5em; /* Tamanho maior para o título */
+    margin-bottom: 20px;
+}
+
+.how-it-works p, .how-it-works ol li {
+    font-size: 0.8em; /* Tamanho do texto dentro dos parágrafos e da lista */
+    margin-bottom: 10px;
+}
+
+/* Seção Pacotes */
+.pricing {
+    padding: 15px 5px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pricing-plan {
+    background-color: #8B0000;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-plan h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.pricing-plan .price {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.premium {
+    background-color: #FFD700; /* Cor destaque para o plano Premium */
+    color: #333;
+}
+
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pricing-plan ul li {
+    margin: 10px 0;
+}
+
+/* Seção de Reviews */
+.reviews {
+    padding: 60px 20px;
+    background-color: #00000085;
+    text-align: center;
+}
+
+.reviews-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-item {
+    text-align: center;
+    width: 250px;
+}
+
+.review-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.review-item p {
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+}
