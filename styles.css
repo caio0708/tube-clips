@@ -260,7 +260,7 @@ footer {
 /* Media Queries para dispositivos móveis */
 @media (max-width: 768px) {
     .container {
-        margin: 0 10px; /* Garante margens iguais em dispositivos móveis */
+        margin: 0 0; /* Garante margens iguais em dispositivos móveis */
     }
 
     .how-it-works-grid {
