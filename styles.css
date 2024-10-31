@@ -1,5 +1,8 @@
 /* Importando a fonte Roboto do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap');
 
 /* Reseta box-sizing */
 * {
@@ -8,7 +11,7 @@
 
 /* Estilo do body */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Outfit', sans-serif;
     line-height: 1.8; /* Ajuste para melhor legibilidade em telas pequenas */
     color: #fff; /* A cor do texto geral */
     margin: 0; /* Remove margens padrão */
@@ -26,6 +29,12 @@ body {
     padding: 10px; /* Ajuste de padding */
 }
 
+.container img {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 20px; /* Espaçamento à esquerda da imagem */
+}
+
 /* Estilo do header */
 header {
     text-align: center;
@@ -34,7 +43,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em; /* Reduzido para ser mais adequado a telas pequenas */
+    font-size: 4em; /* Reduzido para ser mais adequado a telas pequenas */
     margin-bottom: 10px;
 }
 
@@ -106,9 +115,9 @@ header p {
 .cta-button {
     background-color: #fff;
     color: #2d2d2d;
-    padding: 10px 20px; /* Ajuste no padding */
+    padding: 10px 60px; /* Ajuste no padding */
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 40px;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -137,13 +146,13 @@ footer {
 
 /* Seção Como Funciona */
 .how-it-works {
-    padding: 30px 10px; /* Ajuste no padding */
+    padding: 10px 10px; /* Ajuste no padding */
     background-color: #f4f4f4; /* Cor de fundo para a seção Como Funciona */
     color: #333;
     text-align: center;
-    font-family: 'Arial', sans-serif; /* Alterando a fonte para Arial */
-    font-size: 1.1em; /* Aumentando o tamanho do texto */
-    line-height: 1.5; /* Aumentando o espaçamento entre linhas para melhor legibilidade */
+    font-family: "Outfit", sans-serif; /* Alterando a fonte para Arial */
+    font-size: 2em; /* Aumentando o tamanho do texto */
+    line-height: 3em; /* Aumentando o espaçamento entre linhas para melhor legibilidade */
 }
 
 .how-it-works-grid {
@@ -162,19 +171,32 @@ footer {
 
 .how-it-works-item img {
     width: 100%; /* Ocupar toda a largura disponível */
-    max-width: 100%; /* Limite de largura removido */
+    max-width: 477px; /* Limitar a largura máxima (ajuste conforme necessário) */
+    max-height: 358px; /* Limitar a altura máxima (ajuste conforme necessário) */
     height: auto; /* Manter proporção */
     margin-bottom: 15px;
     border-radius: 5px;
+    object-fit: cover; /* Opção para ajustar a imagem dentro do contêiner */
 }
+
 
 .how-it-works h2 {
     font-size: 2em; /* Ajustado para telas menores */
     margin-bottom: 15px;
 }
 
-.how-it-works p, .how-it-works ol li {
-    font-size: 0.9em; /* Tamanho do texto dentro dos parágrafos e da lista */
+.how-it-works p {
+    font-size: 0.6em; /* Tamanho do texto dentro dos parágrafos e da lista */
+    font-family: "Open Sans", sans-serif; /* Alterando a fonte para Arial */
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    text-align: center; /* Alinhamento horizontal do texto */
+}
+
+.how-it-works ol li{
+    font-size: 1em; /* Tamanho do texto dentro dos parágrafos e da lista */
+    font-family: "Open Sans", sans-serif; /* Alterando a fonte para Arial */
+    line-height: 1.5em;
     margin-bottom: 10px;
 }
 
@@ -198,23 +220,23 @@ footer {
     padding: 15px; /* Ajuste no padding */
     border-radius: 10px;
     width: 90%; /* Ajuste para largura responsiva */
-    max-width: 300px; /* Limite de largura */
+    max-width: 600px; /* Limite de largura */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-plan h3 {
-    font-size: 1.6em; /* Ajustado para telas menores */
+    font-size: 4em; /* Ajustado para telas menores */
     margin-bottom: 10px;
 }
 
 .pricing-plan .price {
-    font-size: 1.8em; /* Ajustado para telas menores */
+    font-size: 3.8em; /* Ajustado para telas menores */
     margin: 10px 0;
 }
 
 .premium {
-    background-color: #FFD700; /* Cor destaque para o plano Premium */
-    color: #333;
+    background-color: #2d0505; /* Cor destaque para o plano Premium */
+    color: #ffffff;
 }
 
 .pricing-plan ul {
@@ -224,6 +246,7 @@ footer {
 }
 
 .pricing-plan ul li {
+    font-size: 1.3em;
     margin: 5px 0; /* Ajuste no margin */
 }
 
@@ -252,9 +275,13 @@ footer {
     margin-bottom: 10px;
 }
 
-.review-item p {
-    font-size: 1em; /* Ajustado para telas menores */
+.review-item p{
+    font-size: .875rem;
     color: rgb(255, 255, 255);
+    line-height: 1.25rem;
+    text-align: center;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
 }
 
 /* Media Queries para dispositivos móveis */
