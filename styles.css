@@ -304,3 +304,88 @@ footer {
         max-width: none; /* Remover limite de largura */
     }
 }
+
+.differentials {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.differentials .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.differentials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Cor preta para o título */
+}
+
+.differentials p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #333; /* Cor preta para o parágrafo */
+}
+
+.differentials-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.differential-item {
+    flex: 1;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.differential-item:hover {
+    transform: translateY(-10px);
+}
+
+.differential-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    max-height: 150px; /* Ajuste a altura das imagens */
+    object-fit: contain;
+}
+
+.differential-item h3 {
+    font-size: 1.5rem;
+    color: #333; /* Cor preta para os títulos dentro dos itens */
+    margin-bottom: 10px;
+}
+
+.differential-item p {
+    font-size: 1rem;
+    color: #333; /* Cor preta para o texto dentro dos itens */
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: block;
+    background-color: #8B0000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #660202;
+}
