@@ -201,53 +201,128 @@ footer {
 }
 
 /* Seção Pacotes */
-.pricing {
-    padding: 10px 5px; /* Ajuste no padding */
-    background-color: #8B0000; /* Cor de fundo para a seção de Pacotes */
+.pricing-section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
     text-align: center;
+    color: #333;
 }
 
-.pricing-plans {
+.pricing-container h3 {
+    font-size: 18px;
+    color: #992424;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.pricing-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.pricing-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.pricing-cards {
     display: flex;
     justify-content: center;
-    align-items: center; /* Centralizando itens */
-    gap: 20px; /* Ajuste no espaço entre os planos */
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.pricing-plan {
-    background-color: #2d2d2d; /* Cor de fundo para os planos de preços */
-    color: white;
-    padding: 15px; /* Ajuste no padding */
-    border-radius: 10px;
-    width: 90%; /* Ajuste para largura responsiva */
-    max-width: 600px; /* Limite de largura */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.pricing-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
 }
 
-.pricing-plan h3 {
-    font-size: 4em; /* Ajustado para telas menores */
-    margin-bottom: 10px;
+.pricing-card:hover {
+    transform: scale(1.05);
 }
 
-.pricing-plan .price {
-    font-size: 3.8em; /* Ajustado para telas menores */
+.pricing-card h4 {
+    font-size: 20px;
+    color: #992424;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.pricing-card .price {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
     margin: 10px 0;
 }
 
-.premium {
-    background-color: #2d0505; /* Cor destaque para o plano Premium */
-    color: #ffffff;
+.pricing-card .price span {
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
 }
 
-.pricing-plan ul {
-    list-style: none;
+.pricing-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.pricing-card ul {
+    list-style-type: none;
     padding: 0;
-    margin: 10px 0; /* Ajuste no margin */
+    margin: 0 0 20px;
+    color: #333;
 }
 
-.pricing-plan ul li {
-    font-size: 1.3em;
-    margin: 5px 0; /* Ajuste no margin */
+.pricing-card ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #992424;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: #da0909;
+}
+
+.pricing-card .note {
+    font-size: 12px;
+    color: #999;
+    margin-top: 15px;
+}
+
+.popular {
+    border: 2px solid #992424;
+}
+
+.popular .badge {
+    background-color: #da0909;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 5px;
 }
 
 /* Seção de Reviews */
@@ -388,4 +463,162 @@ footer {
 
 .cta-button:hover {
     background-color: #660202;
+}
+
+.problems-section {
+    background-color: #992424;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 40px auto;
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.problems-container h3 {
+    font-size: 18px;
+    color: #f9f9f9;
+    font-weight: 500;
+}
+
+.problems-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.problems-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.problems-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.problem-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    text-align: center;
+}
+
+.problem-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.problem-item p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.features-section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features-container h3 {
+    font-size: 18px;
+    color: #c90c0c;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.features-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.features-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.highlight {
+    color: #c90c0c;
+    text-decoration: underline;
+}
+
+.features-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+}
+
+.features-image img {
+    width: 350px;    /* Define a largura da imagem */
+    height: auto;   /* Mantém a proporção da imagem */
+
+}
+
+
+.features-list {
+    flex: 1; /* Dá prioridade para a lista ocupar o espaço à direita */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+    background-color: #ffe3e0; /* Vermelho suave */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feature-item:hover {
+    background-color: #ffc8cd;
+}
+
+.feature-description {
+    display: none; /* Esconde a descrição inicialmente */
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.feature-item.open .feature-description {
+    display: block; /* Mostra a descrição quando o item estiver com a classe 'open' */
+}
+
+.feature-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.feature-item h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.feature-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.feature-icon {
+    margin-left: auto;
+    font-size: 20px;
+    color: #ff0000;
+    font-weight: bold;
 }
