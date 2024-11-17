@@ -37,20 +37,71 @@ body {
 
 /* Estilo do header */
 header {
+    background-color: #992424; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
     text-align: center;
-    background-color: #8B0000; /* Cor de fundo para o header */
-    padding: 20px 0; /* Padding para o header */
+    padding: 50px 20px;
+    position: relative;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 header h1 {
-    font-size: 4em; /* Reduzido para ser mais adequado a telas pequenas */
-    margin-bottom: 10px;
+    font-size: 3rem; /* Título grande */
+    font-weight: bold;
+    color: #ffffff; /* Texto branco */
+    margin-bottom: 20px;
+    opacity: 0; /* Inicialmente invisível */
+    animation: slideIn 1s ease-in-out forwards; /* Animação aplicada */
+}
+
+header img {
+    width: 120px; /* Ajuste o tamanho do logo conforme necessário */
+    margin: 20px 0;
+    border-radius: 50%; /* Forma circular (opcional) */
 }
 
 header p {
-    font-size: 1.2em; /* Reduzido para ser mais adequado a telas pequenas */
-    margin-bottom: 15px; /* Ajuste no espaçamento */
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #f5f5f5; /* Texto mais claro para contraste */
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0; /* Inicialmente invisível */
+    animation: fadeIn 2s ease-in-out 0.5s forwards; /* Animação com atraso */
 }
+
+/* Efeito adicional para destacar */
+header img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Keyframes para as animações */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px); /* Inicia fora da tela */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0); /* Move para a posição final */
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 .cta-button-header {
     background-color: #fff;
@@ -146,58 +197,64 @@ footer {
 
 /* Seção Como Funciona */
 .how-it-works {
-    padding: 10px 10px; /* Ajuste no padding */
-    background-color: #f4f4f4; /* Cor de fundo para a seção Como Funciona */
-    color: #333;
+    padding: 50px 20px;
+    background-color: #180b0b; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
     text-align: center;
-    font-family: "Outfit", sans-serif; /* Alterando a fonte para Arial */
-    font-size: 2em; /* Aumentando o tamanho do texto */
-    line-height: 3em; /* Aumentando o espaçamento entre linhas para melhor legibilidade */
+    font-family: "Outfit", sans-serif; /* Fonte moderna */
+    line-height: 1.5em;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem; /* Tamanho maior para o título */
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #f5f5f5;
 }
 
 .how-it-works-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colunas */
-    gap: 30px; /* Espaçamento entre os itens */
+    gap: 40px; /* Espaçamento entre itens */
+    max-width: 1200px;
+    margin: 0 auto; /* Centralizar grid */
 }
 
 .how-it-works-item {
     text-align: center;
-    background-color: #fff;
-    padding: 15px; /* Ajuste no padding */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #2a1c1c; /* Fundo do card */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-it-works-item:hover {
+    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
 }
 
 .how-it-works-item img {
-    width: 100%; /* Ocupar toda a largura disponível */
-    max-width: 477px; /* Limitar a largura máxima (ajuste conforme necessário) */
-    max-height: 358px; /* Limitar a altura máxima (ajuste conforme necessário) */
-    height: auto; /* Manter proporção */
+    width: 100%;
+    max-width: 300px; /* Ajuste conforme necessário */
     margin-bottom: 15px;
-    border-radius: 5px;
-    object-fit: cover; /* Opção para ajustar a imagem dentro do contêiner */
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para imagens */
 }
 
-
-.how-it-works h2 {
-    font-size: 2em; /* Ajustado para telas menores */
-    margin-bottom: 15px;
-}
-
-.how-it-works p {
-    font-size: 0.6em; /* Tamanho do texto dentro dos parágrafos e da lista */
-    font-family: "Open Sans", sans-serif; /* Alterando a fonte para Arial */
-    line-height: 1.5em;
+.how-it-works-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #992424; /* Destaque rosa */
     margin-bottom: 10px;
-    text-align: center; /* Alinhamento horizontal do texto */
 }
 
-.how-it-works ol li{
-    font-size: 1em; /* Tamanho do texto dentro dos parágrafos e da lista */
-    font-family: "Open Sans", sans-serif; /* Alterando a fonte para Arial */
-    line-height: 1.5em;
+.how-it-works-item p {
+    font-size: 1rem;
+    color: #d3d3d3; /* Cinza claro */
     margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 /* Seção Pacotes */
@@ -327,36 +384,68 @@ footer {
 
 /* Seção de Reviews */
 .reviews {
-    padding: 40px 10px; /* Ajuste no padding */
-    background-color: #00000085; /* Cor de fundo para a seção de Reviews */
+    padding: 60px 20px;
+    background-color: #1b0000; /* Fundo sólido escuro */
     text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Cor de destaque para o título */
+    margin-bottom: 40px;
+    font-weight: bold;
 }
 
 .reviews-gallery {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px; /* Maior espaçamento entre os itens */
 }
 
 .review-item {
     text-align: center;
     width: 90%; /* Ajuste para largura responsiva */
-    max-width: 300px; /* Limite de largura */
+    max-width: 280px; /* Largura consistente */
+    background-color: #3a1c1c; /* Fundo suave para os cards */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    padding: 20px; /* Maior espaço interno */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra mais intensa */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+}
+
+.review-item:hover {
+    transform: translateY(-10px); /* Efeito de destaque ao passar o mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .review-item img {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra na imagem */
+    display: block; /* Garante que a imagem seja tratada como bloco */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+.review-item:hover img {
+    transform: scale(1.05); /* Efeito de zoom no hover */
+    transition: transform 0.3s ease-in-out; /* Transição suave para o zoom */
+}
+
+.review-item p {
+    font-size: 1rem; /* Texto ligeiramente maior */
+    color: #ffffff;
+    line-height: 1.5rem;
     margin-bottom: 10px;
 }
 
-.review-item p{
-    font-size: .875rem;
-    color: rgb(255, 255, 255);
-    line-height: 1.25rem;
-    text-align: center;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
+.review-item .username {
+    font-size: 0.95rem;
+    color: #a50000; /* Destaque para o nome do usuário */
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 /* Media Queries para dispositivos móveis */
@@ -506,18 +595,29 @@ footer {
     align-items: center;
     width: 120px;
     text-align: center;
+    transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+.problem-item:hover {
+    transform: scale(1.1); /* Aumenta o item como um todo ao passar o mouse */
 }
 
 .problem-item img {
     width: 40px;
     height: 40px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Transição suave para o ícone */
+}
+
+.problem-item:hover img {
+    transform: scale(1.2); /* Efeito de zoom para o ícone */
 }
 
 .problem-item p {
     font-size: 14px;
     color: #ffffff;
 }
+
 
 .features-section {
     padding: 40px;
@@ -563,7 +663,6 @@ footer {
     height: auto;   /* Mantém a proporção da imagem */
 
 }
-
 
 .features-list {
     flex: 1; /* Dá prioridade para a lista ocupar o espaço à direita */
